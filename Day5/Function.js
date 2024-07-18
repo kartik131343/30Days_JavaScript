@@ -94,5 +94,14 @@ nTimes = (func, n)=>{
 }
 
 nTimes(helloWorld, 3);
+
 // • Task 10: Write a higher-order function that takes two functions and a value, applies the first function to the value, and then applies the second function
+higher = (multi, add, num1)=>{
+    
+}
+add=(num1)=>{
+    return num1*2;
+}
+multiply
+console.log(higher());
 // to the result.
