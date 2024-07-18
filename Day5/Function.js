@@ -96,12 +96,16 @@ nTimes = (func, n)=>{
 nTimes(helloWorld, 3);
 
 // • Task 10: Write a higher-order function that takes two functions and a value, applies the first function to the value, and then applies the second function
-higher = (multi, add, num1)=>{
-    
-}
-add=(num1)=>{
-    return num1*2;
-}
-multiply
-console.log(higher());
 // to the result.
+const applyFunctions = (func1, func2, value) => {
+    const resultFromFunc1 = func1(value);
+    const finalResult = func2(resultFromFunc1);
+    return finalResult;
+  };
+  
+  // Example usage:
+  const addOne = x => x + 1;
+  const double = x => x * 2;
+  
+  const result = applyFunctions(addOne, double, 3);
+  console.log(result); // Output: 8 (first addOne(3) = 4, then double(4) = 8)
