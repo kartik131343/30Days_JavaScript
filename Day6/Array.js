@@ -55,18 +55,33 @@ function even(num1){
 }
 
 // • Task 9: Use the reduce method to calculate the sum of all numbers in the array and log the result.
-// const sum=arr1.reduce((accumulator, currentvalue)=>{
-//     return accumulator +currentvalue;
-// })
 const sum = arr1.reduce(sumOfAll);
 console.log(sum);
 
 function sumOfAll(num2,num3){
     return num2+num3;
 }
+
 // Activity 4: Array Iteration
+
+
 // • Task 10: Use a for loop to iterate over the array and log each element to the console.
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+}
+
 // • Task 11: Use the forEach method to iterate over the array and log each element to the console.
+arr.forEach(function(i){
+    console.log(i);
+})
+
 // Activity 5: Multi-dimensional Arrays
+
+
 // • Task 12: Create a two-dimensional array (matrix) and log the entire array to the console.
+let array = [[1,2,3,4], [2,3,4,5], [3,4,5,6]];
+console.log(array);
+
 // • Task 13: Access and log a specific element from the two-dimensional array.
+let i=2;  j=3;
+console.log(array[i][j]);
